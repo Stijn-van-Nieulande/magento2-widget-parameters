@@ -43,9 +43,23 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 
 ![Image Chooser](docs/screenshots/WysiwygWidgetParameter.png)
 
+### Category Selector
+
+```xml
+<parameter xsi:type="block" name="categories" visible="true" sort_order="10">
+    <label translate="true">Categories</label>
+    <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\CategoryChooser" />
+    <data>
+        <item name="multiple" xsi:type="boolean">true</item>
+    </data>
+</parameter>
+```
+
 ## License
 
 [MIT](/LICENSE.txt)
+
+Category selector taken by Stijn from [StackExchange](https://magento.stackexchange.com/a/267021)
 
 ## Attribution
 
